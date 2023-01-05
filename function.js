@@ -5,3 +5,7 @@ var loginUser = function (name, email, isPaid) {
     return 'User Logged In';
 };
 loginUser('Ogee', 'ogig');
+var addNum = function (amt) {
+    return amt + 2;
+};
+addNum(2);
