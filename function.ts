@@ -20,4 +20,18 @@ addNum(2)
 
 // myVal(6)
 
+const heroes = ['thor', 1, 'spiderman', 'black widow', 54]
+
+heroes.map((hero) => {
+    return `my name is ${hero}`
+})
+
+function logConsole(errmsg: string): void{
+    console.log(errmsg)
+}
+
+function handleError(errmsg: string): never{
+    throw new Error (errmsg)
+}
+
 export {}
