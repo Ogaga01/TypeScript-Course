@@ -21,3 +21,9 @@ const user1: Creator = {
 interface Creator {
     isActive: boolean
 }
+
+// The major difference between interface and types is that interface accepts functions, while types do not
+
+interface Admin extends Creator {
+    role: 'admin' | 'user' | 'ceo'
+}
