@@ -18,6 +18,8 @@ brave()
 
 // console.log(createUser({ name: 'Jude', age: 42, isAvctive: true, isPaid: true }))
 
+// readonly and optional
+
 type User = {
     readonly _id: string
     name: string;
