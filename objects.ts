@@ -5,17 +5,39 @@ brave()
 
 // type aliases
 
+// type User = {
+//     name: string
+//     age: number
+//     isAvctive: boolean
+//     isPaid: boolean
+// }
+
+// const createUser = (user: User): User => {
+//     return {name: user.name, age: user.age, isAvctive: user.isAvctive, isPaid: user.isPaid}
+// }
+
+// console.log(createUser({ name: 'Jude', age: 42, isAvctive: true, isPaid: true }))
+
 type User = {
-    name: string
+    readonly _id: string
+    name: string;
     age: number
     isAvctive: boolean
     isPaid: boolean
+    creditCard? : number
+};
+
+const myUser: User = {
+    _id: 'abc',
+    name: 'jogo',
+    age: 17,
+    isAvctive: true,
+    isPaid: true,
+    creditCard: 1234
 }
 
-const createUser = (user: User): User => {
-    return {name: user.name, age: user.age, isAvctive: user.isAvctive, isPaid: user.isPaid}
-}
+myUser.name = 'Boy Kesh'
 
-console.log(createUser({ name: 'Jude', age: 42, isAvctive: true, isPaid: true }))
+console.log(myUser)
 
 export {}

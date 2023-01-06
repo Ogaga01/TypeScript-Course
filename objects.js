@@ -1,8 +1,16 @@
+"use strict";
+exports.__esModule = true;
 function brave() {
     return { name: 'Aghogho', age: 23 };
 }
 brave();
-var createUser = function (user) {
-    return { name: user.name, age: user.age, isAvctive: user.isAvctive, isPaid: user.isPaid };
+var myUser = {
+    _id: 'abc',
+    name: 'jogo',
+    age: 17,
+    isAvctive: true,
+    isPaid: true,
+    creditCard: 1234
 };
-console.log(createUser({ name: 'Jude', age: 42, isAvctive: true, isPaid: true }));
+myUser.name = 'Boy Kesh';
+console.log(myUser);
